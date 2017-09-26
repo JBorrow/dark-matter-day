@@ -1,52 +1,61 @@
+!!!HTML
+
 %html
-  !!!HTML
   
   %head
     %link{:href => "https://unpkg.com/basscss@8.0.2/css/basscss.min.css", :rel => "stylesheet"}
+    %link{:href => "style.css", :rel => "stylesheet"}
 
   %body
-    .clearfix
-      .stripe.fill
-        .header
+    .content
+      .stripe.fill.bg1
+        .header.container
           %h1 {{ header.title }}
           %h2 {{ header.time }}, {{ header.date }}
           %h3 {{ header.location }}
 
       .stripe
         .event
-          .container
-            .md-col-6
+          .container.clearfix
+            .md-col-8.col
               %h2 {{ details.heading }}
               %p {{ details.blurb }}
-            .md-col-6
-              %img
+            .md-col-4.col
+              %img.m1.rounded{:src => "{{ details.img }}"}
 
       .stripe.fill
         .map
-          %iframe{:src => "{{ map.shareurl }}", :frameborder => "0"}
+          %iframe{:src => "{{ map.shareurl }}", :frameborder => "0", :width => "100%", :height => "100%"}
 
       .stripe
-        .websites
+        .websites.container
           %h2 Event Organisers
           %p {{ cards.blurb }}
-          .cards
-            .card
-              %h3 {{ cards.left.title }}
-            .card
-              %h3 {{ cards.right.title }}
+          .cards.clearfix
+            %a{:href => "{{ cards.left.href }}"}
+              .card.col.sm-col-4.p2.border.rounded
+                %h3 {{ cards.left.title }}
+                %img.rounded{:src => "{{ cards.left.img }}"}
+                %p {{ cards.left.blurb }}
 
-      .stripe.fill
-        .twitter
+            %a{:href => "{{ cards.right.href }}"}
+              .card.col.sm-col-4.p2.border.rounded
+                %h3 {{ cards.right.title }}
+                %img.rounded{:src => "{{ cards.right.img }}"}
+                %p {{ cards.right.blurb }}
+
+      .stripe.fill.bg2
+        .twitter.container
           .clearfix
-            .md-col-6
+            .md-col-6.col
               %a.twitter-timeline{:href => "https://twitter.com/{{ twitter.left }}"}
                 Tweets by {{ twitter.left }}
               // We may need async here.
-              %script{:src =>"//platform.twitter.com/widgets.js", :charset => "utf-8"}
-            .md-col-6
+              %script{:src =>"//platform.twitter.com/widgets.js", :charset => "utf-8", :async => "async"}
+            .md-col-6.col
               %a.twitter-timeline{:href => "https://twitter.com/{{ twitter.right }}"}
                 Tweets by {{ twitter.right }}
-              %script{:src =>"//platform.twitter.com/widgets.js", :charset => "utf-8"}
+              %script{:src =>"//platform.twitter.com/widgets.js", :charset => "utf-8", :async => "async"}
 
 
 
