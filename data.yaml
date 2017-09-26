@@ -11,6 +11,7 @@ details:
     engage with some of the exciting science that we do. Learn about Dark Matter, what it
     is, what effects it causes and how we are trying to detect it right here in the North
     East!
+  img: "details.png"
 
 map:
   # Get the URL from the 'embed' part of Google Maps for this section.
@@ -21,11 +22,17 @@ cards:
   blurb: >
     This exhibit is brought to you through a partnership between the Institute for Particle
     Physics Phenomenology and the Institute for Computational Cosmology. You can find out
-    more about their individual exhibits on their websites below!"""
+    more about their individual exhibits on their websites below!
   left:
     title: "Modelling the Invisible"
+    href: "http://www.modellinginvisible.org"
+    img: "modelling.png"
+    blurb: "The Modelling the Invisible exhibit was first shown at the Royal Society Summer Science Festival 2017, and aims to teach the public about dark matter detection methods and the particle theory behind them."
   right:
     title: "Galaxy Makers"
+    href: "http://www.galaxymakers.org"
+    img: "galaxymakers.png"
+    blurb: "The Galaxy Makers exhibit was first shown at the Royal Society Summer Science Festival 2016, and continues today online where you can make your own galaxy and universe!"
 
 twitter:
   left: "DarkerMatters"
