@@ -3,6 +3,9 @@
 %html
   
   %head
+    %meta{"content" => "IE=edge", "http-equiv" => "X-UA-Compatible"}
+    %meta{"charset" => "utf-8"}
+    %meta{"content" => "width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no", "name" => "viewport"}
     %link{:href => "https://unpkg.com/basscss@8.0.2/css/basscss.min.css", :rel => "stylesheet"}
     %link{:href => "style.css", :rel => "stylesheet"}
 
@@ -46,17 +49,13 @@
 
       .stripe.fill.bg2
         .twitter.container
+          %h3 Follow us on twitter for updates!
           .clearfix
-            .md-col-6.col
-              %a.twitter-timeline{:href => "https://twitter.com/{{ twitter.left }}"}
-                Tweets by {{ twitter.left }}
-              // We may need async here.
-              %script{:src =>"//platform.twitter.com/widgets.js", :charset => "utf-8", :async => "async"}
-            .md-col-6.col
-              %a.twitter-timeline{:href => "https://twitter.com/{{ twitter.right }}"}
-                Tweets by {{ twitter.right }}
-              %script{:src =>"//platform.twitter.com/widgets.js", :charset => "utf-8", :async => "async"}
+            .md-col-6.col.p1
+              %a.twitter-timeline{:href => "https://twitter.com/{{ twitter.left }}", "data-height" => "500", "data-link-color" => "#7E317B"}Tweets by @{{ twitter.left }}
+            .md-col-6.col.p1
+              %a.twitter-timeline{:href => "https://twitter.com/{{ twitter.right }}", "data-height" => "500", "data-link-color" => "#7E317B"}Tweets by @{{ twitter.right }}
 
 
-
+    %script{:src =>"//platform.twitter.com/widgets.js", :charset => "utf-8", :async => "async"}
 
