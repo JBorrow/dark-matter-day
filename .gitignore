@@ -7,3 +7,6 @@ env/*
 *compiled*
 data/about.yaml
 *.pyc
+
+*.png
+*.jpg
