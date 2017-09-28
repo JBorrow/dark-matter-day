@@ -2,16 +2,21 @@ header:
   title: Dark Matter Day
   time: "6:00 PM"
   date: "31st October 2017"
-  location: "Durham University"
+  logo: "logo.png"
 
 details:
-  heading: Modelling the Invisible
+  heading: Seeing the Invisible
   blurb: >
-    Come along to the Department of Physics on the 31st of October for a rare chance to
-    engage with some of the exciting science that we do. Learn about Dark Matter, what it
-    is, what effects it causes and how we are trying to detect it right here in the North
-    East!
-  img: "details.png"
+      Come along to the Department of Physics on the 31st of October
+      (<a href="http://www.darkmatterday.com/">Dark Matter Day!</a>) for a
+      chance to engage with some of the exciting science that we do. We will
+      have interactive exhibits where you will learn about Dark Matter, what
+      it is, what effects it causes and how we are trying to detect it right
+      here in the North East!</p>
+
+      <p>The event will be at the new Physics building (picture right) and
+      will start at 6:00 PM. We look forward to seeing you there!</p>
+  img: "details.jpg"
 
 map:
   # Get the URL from the 'embed' part of Google Maps for this section.

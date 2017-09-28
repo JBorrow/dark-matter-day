@@ -34,7 +34,6 @@ img {
   margin-bottom: -3em;
 }
 
-
 .stripe {
   position: relative;
   padding-top: 1em;
@@ -57,10 +56,6 @@ img {
   font-size: 2em;
 }
 
-.card {
-  margin-right: 1em;
-}
-
 .card h3 {
   margin-top: 0;
 }
@@ -70,15 +65,18 @@ img {
 }
 
 .bg1 {
-  background-image: url("background1.jpg");
+  background-image: url("background.jpg");
   background-position: center;
   background-size: cover;
 }
 
 .bg2 {
-  background-image: url("background2.jpg");
+  background-image: url("background.jpg");
   background-position: center;
   background-size: cover;
   padding-bottom: 8em;
 }
 
+.logo {
+  max-width:10em;
+}

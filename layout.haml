@@ -15,16 +15,18 @@
         .header.container
           %h1 {{ header.title }}
           %h2 {{ header.time }}, {{ header.date }}
-          %h3 {{ header.location }}
+          %img.logo{:src => "{{ header.logo }}"}
 
       .stripe
         .event
           .container.clearfix
-            .md-col-8.col
+            .md-col-6.col
               %h2 {{ details.heading }}
               %p {{ details.blurb }}
-            .md-col-4.col
-              %img.m1.rounded{:src => "{{ details.img }}"}
+            .md-col-1.col
+              %p
+            .md-col-5.col
+              %img.rounded{:src => "{{ details.img }}"}
 
       .stripe.fill
         .map
@@ -34,15 +36,15 @@
         .websites.container
           %h2 Event Organisers
           %p {{ cards.blurb }}
-          .cards.clearfix
+          .cards.clearfix.mxn1
             %a{:href => "{{ cards.left.href }}"}
-              .card.col.sm-col-4.p2.border.rounded
+              .card.col.sm-col-4.p2.border.rounded.m1
                 %h3 {{ cards.left.title }}
                 %img.rounded{:src => "{{ cards.left.img }}"}
                 %p {{ cards.left.blurb }}
 
             %a{:href => "{{ cards.right.href }}"}
-              .card.col.sm-col-4.p2.border.rounded
+              .card.col.sm-col-4.p2.border.rounded.m1
                 %h3 {{ cards.right.title }}
                 %img.rounded{:src => "{{ cards.right.img }}"}
                 %p {{ cards.right.blurb }}
@@ -50,7 +52,7 @@
       .stripe.fill.bg2
         .twitter.container
           %h3 Follow us on twitter for updates!
-          .clearfix
+          .clearfix.mxn1
             .md-col-6.col.p1
               %a.twitter-timeline{:href => "https://twitter.com/{{ twitter.left }}", "data-height" => "500", "data-link-color" => "#7E317B"}Tweets by @{{ twitter.left }}
             .md-col-6.col.p1
