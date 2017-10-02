@@ -8,5 +8,3 @@ env/*
 data/about.yaml
 *.pyc
 
-*.png
-*.jpg
