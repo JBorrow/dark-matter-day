@@ -43,15 +43,15 @@ def get_data(data_fn):
 
 if __name__ == "__main__":
     DATA = [
-        "data.yaml",
+        "src/data.yaml",
     ]
 
     TEMPLATES = [
-        "layout.html",
+        "src/layout.html",
     ]
 
     OUTPUT = [
-        "out.html",
+        "index.html",
     ]
 
     OUT_TEXT = [
